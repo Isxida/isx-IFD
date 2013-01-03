@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:icecore="http://www.icefaces.org/icefaces/core"
+        xmlns:ace="http://www.icefaces.org/icefaces/components"
+        xmlns:ice="http://www.icesoft.com/icefaces/component"
+    >
+    <h:head>
+        <title>ICEfaces 3</title>
+        <ice:outputStyle href="./xmlhttp/css/rime/rime.css" />
+    </h:head>
+    <h:body>
+       <h:form id="iceForm">
+        <ace:panel header="Welcome to ICEfaces">
+      <h:panelGrid columns="1">
+      	<ace:linkButton id="miHelloWorld" value="ANOTHER HELLO WORLD in spring :o" href="http://127.0.0.1:8080/isx-HelloWorld/"></ace:linkButton>
+        <ace:linkButton id="mantClientes" value="Antoher CRUD in SPRING MVC 3 and Hibernate 3 (En desarrollo)" href="http://127.0.0.1:8080/isx-SpringHibernate/" disabled="true"></ace:linkButton>
+        <ace:linkButton id="linkButton4" value="Tutorials como este textbox P:" href="http://www.icesoft.org/community/tutorials-samples.jsf"></ace:linkButton>
+      </h:panelGrid>
+     <h:outputText value="#{yourBean.getSelectDateProperty}" id="outputText2" ></h:outputText>
+			<ace:dateTimeEntry id="dateTimeEntryId"
+				value="#{yourBean.selectDateProperty}" timeZone="Canada/Mountain"
+				pattern="MMM/dd/yyyy" renderAsPopup="true" ></ace:dateTimeEntry>
+
+		</ace:panel>
+       </h:form>
+    </h:body>
+</html>
